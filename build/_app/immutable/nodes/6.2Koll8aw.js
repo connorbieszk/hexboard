@@ -7,6 +7,6 @@ import{f as e,m as t}from"../chunks/B8BJcY6L.js";import"../chunks/I8rQr1kY.js";v
       margin: 2vh;
       justify-items: center;
       flex-direction: row;
-    "><a href="/scouting/match" class="button">Match Scout</a> <a href="/scouting/practice" class="button" style="
+    "><a href="/scouting/match" class="button">Match Scout</a> <a href="/scouting/pit" class="button-right">Pit Scout</a> <a href="/scouting/practice" class="button" style="
         margin-left: auto;
-        ">Practice Scout</a> <a href="/scouting/pit" class="button-right">Pit Scout</a> <a href="/scouting/prematch" class="button-right">Pre Scout</a></div></div>`);function r(t){e(t,n())}export{r as component};
+        ">Practice Scout</a> <a href="/scouting/prematch" class="button-right">Pre Scout</a> <a href="/scouting/offline" class="button-right">Offline Data</a></div></div>`);function r(t){e(t,n())}export{r as component};
