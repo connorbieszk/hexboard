@@ -1,0 +1,77 @@
+@font-face {
+      font-family: "Space Grotesk";
+      src: url("/fonts/SpaceGrotesk-Light.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("/fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("/fonts/SpaceGrotesk-Medium.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("/fonts/SpaceGrotesk-SemiBold.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+* {
+    box-sizing: border-box;
+    --bg-color-1: #ff521d85;
+    --bg-color-2: #ff521dab;
+    --bg-color-3: #ff521d;
+
+    --text-color: #ffb8a2;
+}
+
+body {
+    background-color: var(--bg-color-1);
+    font-family: "Space Grotesk";
+}
+
+div.navbar {
+    padding: 1vh;
+    background-color: var(--bg-color-2);
+        display: flex;
+    align-items: center;
+}
+
+a.button, a.button-right {
+    background-color: var(--bg-color-3);
+    color: var(--text-color);
+    padding: .5vh;
+    font-size: 2.5svh;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a.button-right {
+    margin-left: auto;
+}
+
+div.footer {
+    background-color: var(--bg-color-2);
+    color: var(--text-color);
+    text-align: center;
+
+    padding: 10px;
+}
