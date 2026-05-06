@@ -45,11 +45,13 @@
 
 body {
     background-color: var(--bg-color-1);
+    color: var(--text-color);
+    font-weight: 500;
     font-family: "Space Grotesk";
 }
 
 div.navbar {
-    padding: 1vh;
+    padding: 2vh;
     background-color: var(--bg-color-2);
     display: flex;
     align-items: center;
@@ -58,8 +60,12 @@ div.navbar {
 a.button, a.button-right {
     background-color: var(--bg-color-3);
     color: var(--text-color);
-    padding: .5vh;
-    font-size: 2.5svh;
+    padding-bottom: 1.5vh;
+    padding-top: 1.5vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+
+    font-size: 3svh;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -72,17 +78,22 @@ a.button-right {
 div.content {
     width: 100%;
     display: flex;
+    flex-direction: column;
     height: max-content;
     background-color: var(--bg-color-2);
     padding: 1vh;
     margin: 1vh auto;
+}
 
+div.content > p {
+    background-color: var(--bg-color-3);
+    padding: 2vh;
+    margin: 2vh;
 }
 
 div.footer {
     background-color: var(--bg-color-2);
-    color: var(--text-color);
     text-align: center;
-        display: flex;
-    padding: 10px;
+    display: flex;
+    padding: 2vh;
 }
