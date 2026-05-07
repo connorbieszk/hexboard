@@ -1,0 +1,12 @@
+import{C as e,F as t,M as n,T as r,b as i,f as a,j as o,m as s,o as c}from"../chunks/B8BJcY6L.js";import{s as l}from"../chunks/Vlnin_yN.js";import"../chunks/I8rQr1kY.js";var u=s(`<div class="content"><h1 style="
+    background-color: var(--bg-color-3);
+    padding: 2vh;
+    margin: 2vh;
+    ">Welcome Scouter!</h1> <p>Please select a type of scouting below.</p> <div style="background-color: transparent;
+      display: flex;
+      margin: 2vh;
+      justify-items: center;
+      flex-direction: row;
+    "><a class="button">Match Scout</a> <a class="button-right">Pit Scout</a> <a class="button" style="
+        margin-left: auto;
+        ">Practice Scout</a> <a class="button-right">Pre Scout</a> <a class="button-right">Offline Data</a></div></div>`);function d(s,d){n(d,!0);var f=u(),p=r(e(f),4),m=e(p),h=r(m,2),g=r(h,2),_=r(g,2),v=r(_,2);t(p),t(f),i((e,t,n,r,i)=>{c(m,`href`,e),c(h,`href`,t),c(g,`href`,n),c(_,`href`,r),c(v,`href`,i)},[()=>l(`/scouting/match`),()=>l(`/scouting/pit`),()=>l(`/scouting/practice`),()=>l(`/scouting/prematch`),()=>l(`/scouting/offline`)]),a(s,f),o()}export{d as component};

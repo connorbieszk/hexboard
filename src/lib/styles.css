@@ -1,99 +1,135 @@
 @font-face {
-      font-family: "Space Grotesk";
-      src: url("/fonts/SpaceGrotesk-Light.woff2") format("woff2");
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Space Grotesk";
-      src: url("/fonts/SpaceGrotesk-Regular.woff2") format("woff2");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Space Grotesk";
-      src: url("/fonts/SpaceGrotesk-Medium.woff2") format("woff2");
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Space Grotesk";
-      src: url("/fonts/SpaceGrotesk-SemiBold.woff2") format("woff2");
-      font-weight: 600;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Space Grotesk";
-      src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
 
 * {
-    box-sizing: border-box;
-    --bg-color-1: #ff521d85;
-    --bg-color-2: #ff521dab;
-    --bg-color-3: #ff521d;
+	box-sizing: border-box;
+	--bg-color-1: #ff521d85;
+	--bg-color-2: #ff521dab;
+	--bg-color-3: #ff521d;
 
-    --text-color: #ffb8a2;
+	--text-color: #ffb8a2;
 }
 
 body {
-    background-color: var(--bg-color-1);
-    color: var(--text-color);
-    font-weight: 500;
-    font-family: "Space Grotesk";
+	background-color: var(--bg-color-1);
+	color: var(--text-color);
+	font-weight: 500;
+	font-family: 'Space Grotesk';
 }
 
 div.navbar {
-    padding: 2vh;
-    background-color: var(--bg-color-2);
-    display: flex;
-    align-items: center;
+	padding: 2vh;
+	background-color: var(--bg-color-2);
+	display: flex;
+	align-items: center;
 }
 
-a.button, a.button-right {
-    background-color: var(--bg-color-3);
-    color: var(--text-color);
-    padding-bottom: 1.5vh;
-    padding-top: 1.5vh;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
+a.button,
+a.button-right,
+a.button-center {
+	background-color: var(--bg-color-3);
+	color: var(--text-color);
+	padding-bottom: 1.5vh;
+	padding-top: 1.5vh;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
 
-    font-size: 3svh;
-    text-decoration: none;
-    margin-right: 10px;
+	font-size: 3svh;
+	text-decoration: none;
+	margin-right: 10px;
 }
 
 a.button-right {
-    margin-left: auto;
-    margin-right: 0;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+a.button-center {
+	margin-left: auto;
 }
 
 div.content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    background-color: var(--bg-color-2);
-    padding: 1vh;
-    margin: 1vh auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: max-content;
+	background-color: var(--bg-color-2);
+	padding: 1vh;
+	margin: 1vh auto;
 }
 
 div.content > p {
-    background-color: var(--bg-color-3);
-    padding: 2vh;
-    margin: 2vh;
+	background-color: var(--bg-color-3);
+	padding: 2vh;
+	margin: 2vh;
+}
+
+div.button-menu {
+	background-color: transparent;
+	display: flex;
+	margin: 2vh;
+	justify-items: center;
+	flex-direction: row;
 }
 
 div.footer {
-    background-color: var(--bg-color-2);
-    text-align: center;
-    display: flex;
-    padding: 2vh;
+	background-color: var(--bg-color-2);
+	text-align: center;
+	display: flex;
+	padding: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+	div.button-menu {
+		background-color: transparent;
+		display: flex;
+		margin: 2vh;
+		justify-items: center;
+		flex-direction: column;
+	}
+
+    div.content > a.button, a.button-right, a.button-center {
+        margin-top: .5vh;
+        margin-bottom: .5vh;
+	    margin-left: 0;
+	    margin-right: 0;
+    } 
+
+    div.navbar > a.button-right {
+	margin-left: auto;
+	margin-right: 0;
+}
 }

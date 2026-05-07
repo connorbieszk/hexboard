@@ -1,3 +1,7 @@
+    <script>
+  import { resolve } from '$app/paths';
+</script>
+
 <div class="content">
     <h1 style = "
     background-color: var(--bg-color-3);
@@ -10,22 +14,14 @@
     <p>
         Below are buttons to navigate to different parts of the app. 
     </p>
-    <div style =
-     "background-color: transparent;
-      display: flex;
-      margin: 2vh;
-      justify-items: center;
-      flex-direction: row;
-    ">
-     <a href="/scouting" class="button">
+    <div class="button-menu">
+     <a href={resolve('/scouting')} class="button">
             Scouting
         </a>
-        <a href="/member-dash" class="button" style = "
-        margin-left: auto;
-        ">
+        <a href={resolve('/member-dash')} class="button-center">  
             Member Dashboard
         </a>
-        <a href="/data-viewer" class="button-right">
+        <a href={resolve('/data-viewer')} class="button-right">
             Data
         </a>
     </div>

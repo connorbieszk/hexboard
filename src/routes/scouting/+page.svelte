@@ -1,3 +1,7 @@
+<script>
+	  import { resolve } from '$app/paths';
+</script>
+
 <div class="content">
 	<h1
 		style="
@@ -18,10 +22,10 @@
       flex-direction: row;
     "
 	>
-		<a href="/scouting/match" class="button"> Match Scout </a>
-		<a href="/scouting/pit" class="button-right"> Pit Scout </a>
+		<a href={resolve("/scouting/match")} class="button"> Match Scout </a>
+		<a href={resolve("/scouting/pit")} class="button-right"> Pit Scout </a>
 		<a
-			href="/scouting/practice"
+			href={resolve("/scouting/practice")}
 			class="button"
 			style="
         margin-left: auto;
@@ -29,7 +33,7 @@
 		>
 			Practice Scout
 		</a>
-		<a href="/scouting/prematch" class="button-right"> Pre Scout </a>
-		<a href="/scouting/offline" class="button-right"> Offline Data </a>
+		<a href={resolve("/scouting/prematch")} class="button-right"> Pre Scout </a>
+		<a href={resolve("/scouting/offline")} class="button-right"> Offline Data </a>
 	</div>
 </div>
