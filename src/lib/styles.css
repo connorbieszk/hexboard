@@ -36,9 +36,11 @@
 
 * {
 	box-sizing: border-box;
-	--bg-color-1: #ff521d85;
-	--bg-color-2: #ff521dab;
-	--bg-color-3: #ff521d;
+	--bg-color-1: #a3361585;
+	--bg-color-2: #a33615ab;
+	--bg-color-3: #a33615;
+
+	--black: #1a0903;
 
 	--text-color: #ffb8a2;
 }
@@ -53,6 +55,7 @@ body {
 div.navbar {
 	padding: 2vh;
 	background-color: var(--bg-color-2);
+	border: var(--black) 0.75vh solid;
 	display: flex;
 	align-items: center;
 }
@@ -82,6 +85,7 @@ a.button-center {
 }
 
 div.content {
+	border: var(--black) 0.75vh solid;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -94,6 +98,7 @@ div.content {
 div.content > p {
 	background-color: var(--bg-color-3);
 	padding: 2vh;
+	font-size: 1.75svh;
 	margin: 2vh;
 }
 
@@ -106,10 +111,18 @@ div.button-menu {
 }
 
 div.footer {
+	border: var(--black) 0.75vh solid;
 	background-color: var(--bg-color-2);
 	text-align: center;
 	display: flex;
 	padding: 2vh;
+}
+
+hr {
+	border: var(--black) 0.25vh solid;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 @media screen and (max-width: 768px) {

@@ -11,6 +11,8 @@
         Welcome to Hexboard 2026
     </h1>
 
+    <hr>
+
     <p>
         Below are buttons to navigate to different parts of the app. 
     </p>
@@ -25,6 +27,8 @@
             Data
         </a>
     </div>
+
+    <hr>
     <p>
         The scouting button will lead to a second navigation menu to determine what type of scouting you want to do. 
         <br> <br>

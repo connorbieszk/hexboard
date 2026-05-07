@@ -3,7 +3,7 @@
  * Framework: SvelteKit
  *
  * This file is an example from the SvelteKit documentation.
- * Modifications have been made by Team 3197 lines 32-36
+ * Modifications have not been made by Team 3197
  */
 
 // Disables access to DOM typings like `HTMLElement` which are not available
@@ -29,11 +29,6 @@ const CACHE = `cache-${version}`;
 const ASSETS = [
 	...build, // the app itself
 	...files, // everything in `static`
-	'/fonts/SpaceGrotesk-Light.woff2', // Modified by Hexhounds; Adds fonts to cache
-	'/fonts/SpaceGrotesk-Regular.woff2', // Modified by Hexhounds
-	'/fonts/SpaceGrotesk-Medium.woff2', // Modified by Hexhounds
-	'/fonts/SpaceGrotesk-SemiBold.woff2', // Modified by Hexhounds
-	'/fonts/SpaceGrotesk-Bold.woff2' // Modified by Hexhounds
 ];
 
 self.addEventListener('install', (event) => {
