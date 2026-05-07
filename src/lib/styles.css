@@ -69,7 +69,7 @@ a.button-center {
 
 	font-size: 3svh;
 	text-decoration: none;
-	margin-right: 10px;
+	margin-right: 2vh;
 }
 
 a.button-right {
@@ -121,15 +121,20 @@ div.footer {
 		flex-direction: column;
 	}
 
-    div.content > a.button, a.button-right, a.button-center {
-        margin-top: .5vh;
-        margin-bottom: .5vh;
-	    margin-left: 0;
-	    margin-right: 0;
-    } 
+	a.button,
+	a.button-center,
+	a.button-right {
+		margin-top: 0.5vh;
+		margin-bottom: 0.5vh;
+		margin-left: 0;
+		margin-right: 0;
+	}
 
-    div.navbar > a.button-right {
-	margin-left: auto;
-	margin-right: 0;
-}
+	div.navbar > a.button {
+		margin-right: 2vh;
+	}
+
+	div.navbar > a.button-right {
+		margin-right: 2vh;
+	}
 }

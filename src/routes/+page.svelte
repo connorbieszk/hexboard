@@ -27,11 +27,11 @@
     </div>
     <p>
         The scouting button will lead to a second navigation menu to determine what type of scouting you want to do. 
-        <br>
+        <br> <br>
         Member Dashboard leads to an area where you can view your stats, log hours, and other fun activities.
-        <br>
+        <br> <br>
         The final button is the data viewer. You can see specific team stats, view tables, compare, and other data analysis tooling. 
-        <br>
+        <br> <br>
         There is also an admin panel accessible in the top navbar. More information can be found inside the panel.
     </p>
 </div>
